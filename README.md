@@ -3,5 +3,5 @@
 
 Лінк на GitHub Pages. Є помилки - буду солвити.
 ------------------------------------------------
-https://github.com/StarShopper/ElifTech-Delivery
+https://starshopper.github.io/ElifTech-Delivery/
 ------------------------------------------------
