@@ -1,4 +1,4 @@
---- --- *,
+*,
 *::after,
 *::before {
   box-sizing: border-box;
@@ -11,6 +11,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   color: #000;
+  background-color: azure;
 }
 
 h1, h2, h3, h4, h5, h6, ul, p, i {
@@ -62,6 +63,7 @@ header {
 
 main {
   padding: 40px 0;
+  position: relative;
 }
 
 .main__inner {
@@ -78,16 +80,26 @@ main {
   flex-direction: column;
   border: 2px #000 solid;
   padding: 20px 50px;
-  height: 209px;
+}
+
+.title {
+  text-align: center;
+}
+
+.btn__item {
+  padding: 20px 30px;
+  margin: 5px 0;
 }
 
 .shop__content {
+  height: 500px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border: 2px #000 solid;
-  padding: 30px;
+  padding: 10px;
   margin: 0 auto;
+  overflow: scroll;
 }
 
 .product {
@@ -97,4 +109,50 @@ main {
 
 .product__inner {
   padding: 10px;
+}
+
+.btn {
+  float: right;
+  margin-bottom: 10px;
+}
+
+.modal {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.modal__cart {
+  width: 100%;
+  max-width: 1190px;
+  margin: auto;
+  padding: 32px;
+  background-color: #fff;
+}
+
+.modal__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__item {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: #000 1px solid;
+}
+.modal__item > label, .modal__item input {
+  display: block;
+  margin: 0 10px;
+}
+.modal__item > label {
+  padding: 15px 0;
+}
+.modal__item > input:last-child {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
