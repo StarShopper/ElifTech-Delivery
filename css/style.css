@@ -2,6 +2,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 body {
@@ -12,9 +14,25 @@ body {
   font-size: 18px;
   color: #000;
   background-color: azure;
+  overflow: hidden;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, ul, p, i {
+input, button, textarea {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p,
+i {
   margin: 0;
   padding: 0;
 }
@@ -45,7 +63,7 @@ header {
   position: relative;
 }
 .nav__link {
-  padding-left: 50px;
+  padding-left: 70px;
 }
 .nav__link:first-child {
   padding-left: 0;
@@ -59,6 +77,14 @@ header {
   top: -10px;
   left: 70px;
   z-index: 1;
+}
+.nav > button {
+  display: block;
+  border: hidden;
+  background-color: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 main {
@@ -111,9 +137,14 @@ main {
   padding: 10px;
 }
 
+.product__main {
+  display: flex;
+  justify-content: space-between;
+}
+
 .btn {
   float: right;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 
 .modal {
@@ -143,10 +174,12 @@ main {
 .modal__item {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 45%;
+  height: 350px;
   border: #000 1px solid;
 }
-.modal__item > label, .modal__item input {
+.modal__item > label,
+.modal__item input {
   display: block;
   margin: 0 10px;
 }
@@ -155,4 +188,60 @@ main {
 }
 .modal__item > input:last-child {
   margin-bottom: 10px;
+}
+
+.modal__item.item-1 {
+  overflow: hidden;
+}
+
+.modal__item.item-2 {
+  overflow: scroll;
+}
+
+.product.modal-product {
+  margin: 10px;
+}
+
+.product__inner.modal-inner {
+  display: flex;
+}
+
+.product__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.product__right > h5 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.product__counter {
+  display: flex;
+  margin: 5px;
+}
+.product__counter > .product__control {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.product__counter > .product__current {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.modal__footer > h6 {
+  margin-right: 50px;
+  font-size: 18px;
+}
+.modal__footer > button {
+  width: 140px;
+  height: 30px;
 }/*# sourceMappingURL=style.css.map */

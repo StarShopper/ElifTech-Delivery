@@ -13,8 +13,8 @@
     <header>
         <div class="container">
             <nav class="nav">
-                <a href="#" class="nav__link">Shop</a>
-                <a href="#" class="nav__link">Shopping Cart</a>
+                <button type="button" class="nav__link" id="home">Shop</button>
+                <button type="button" class="nav__link" id="show-modal">Shopping Cart</button>
             </nav>
         </div>
     </header>
@@ -31,59 +31,61 @@
                     </div>
                 </div>
 
-                <div class="shop__content">
-                    <div class="product">
-                        <div class="product__inner">
-                            <img src="http://place-hold.it/250x100" alt="product-photo">
-                            <h5 class="product__name">Big Burgir</h5>
-                            <button class="btn">add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <img src="http://place-hold.it/250x100" alt="product-photo">
-                            <h5 class="product__name">Big Burgir</h5>
-                            <button class="btn">add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <img src="http://place-hold.it/250x100" alt="product-photo">
-                            <h5 class="product__name">Big Burgir</h5>
-                            <button class="btn">add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <img src="http://place-hold.it/250x100" alt="product-photo">
-                            <h5 class="product__name">Big Burgir</h5>
-                            <button class="btn">add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <img src="http://place-hold.it/250x100" alt="product-photo">
-                            <h5 class="product__name">Big Burgir</h5>
-                            <button class="btn">add to Cart</button>
-                        </div>
-                    </div>
-                    <div class="product">
-                        <div class="product__inner">
-                            <img src="http://place-hold.it/250x100" alt="product-photo">
-                            <h5 class="product__name">Big Burgir</h5>
-                            <button class="btn">add to Cart</button>
-                        </div>
-                    </div>
+                <!-- Products -->
 
+                <div class="shop__content">
+                    <div class="product" data-id="01">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Big Burgir</h5>
+                                <h5 class="product__price">Cost: 100$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="02">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Small Burgir</h5>
+                                <h5 class="product__price">Cost: 50$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="03">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Cheese Burgir</h5>
+                                <h5 class="product__price">Cost: 60$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="04">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Chicken Burgir</h5>
+                                <h5 class="product__price">Cost: 70$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
 
-    <div class="modal">
+    <!-- Modal Window -->
+
+    <div class="modal" style="display: none;" id="modal">
             <div class="modal__cart">
                 <div class="container">
                     <div class="modal__inner">
+                        <!-- Modal item #1 (User's info) -->
                         <div class="modal__item item-1">
                             <label for="name">Name:</label>
                             <input type="text" name="name" placeholder="Enter Your Name">
@@ -94,12 +96,63 @@
                             <label for="Adress">Adress:</label>
                             <input type="text" name="Adress" placeholder="Enter Your Adress">
                         </div>
-                        <div class="modal__item"></div>
+                        <!-- Modal item #2 (Product Info)-->
+                        <div class="modal__item item-2">
+                            <div class="product modal-product">
+                                <div class="product__inner modal-inner">
+                                    <img src="http://place-hold.it/250x100" alt="product-photo">
+                                    <div class="product__right">
+                                        <h5 class="product__name">Big Burgir</h5>
+                                        <div class="product__counter modal-counter">
+                                            <div class="product__control" data-action="minus">-</div>
+                                            <div class="product__current" data-counter>1</div>
+                                            <div class="product__control" data-action="plus">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product modal-product">
+                                <div class="product__inner modal-inner">
+                                    <img src="http://place-hold.it/250x100" alt="product-photo">
+                                    <div class="product__right">
+                                        <h5 class="product__name">Big Burgir</h5>
+                                        <div class="product__counter modal-counter">
+                                            <div class="product__control" data-action="minus">-</div>
+                                            <div class="product__current" data-counter>1</div>
+                                            <div class="product__control" data-action="plus">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product modal-product">
+                                <div class="product__inner modal-inner">
+                                    <img src="http://place-hold.it/250x100" alt="product-photo">
+                                    <div class="product__right">
+                                        <h5 class="product__name">Big Burgir</h5>
+                                        <div class="product__counter modal-counter">
+                                            <div class="product__control" data-action="minus">-</div>
+                                            <div class="product__current" data-counter>1</div>
+                                            <div class="product__control" data-action="plus">+</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal Footer -->
+                    <div class="modal__footer">
+                        <h6>Total Price: 000 </h6>
+                        <button class="submit-btn" type="submit"> Submit </button>
                     </div>
                 </div>
             </div>
 
     </div>
+
+    <script src="/script/counter.js"></script>
+    <script src="/script/cart.js"></script>
+    <script src="/script/modal.js"></script>
 </body>
 
 </html>
