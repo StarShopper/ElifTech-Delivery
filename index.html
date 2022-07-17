@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"  href="/css/style.css">
+    <script src="https://kit.fontawesome.com/c1400d0575.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 
@@ -14,7 +15,7 @@
         <div class="container">
             <nav class="nav">
                 <button type="button" class="nav__link" id="home">Shop</button>
-                <button type="button" class="nav__link" id="show-modal">Shopping Cart</button>
+                <button type="button" class="nav__link" id="show-modal" data-modal="#modal">Shopping Cart</button>
             </nav>
         </div>
     </header>
@@ -81,9 +82,12 @@
 
     <!-- Modal Window -->
 
-    <div class="modal" style="display: none;" id="modal">
+    <div class="modal" id="modal">
             <div class="modal__cart">
                 <div class="container">
+                    <button class="modal__close" data-close>
+                        <i class="fa-solid fa-circle-xmark" style="width: 20px; height: 20px;"></i>
+                    </button>
                     <div class="modal__inner">
                         <!-- Modal item #1 (User's info) -->
                         <div class="modal__item item-1">
@@ -98,11 +102,15 @@
                         </div>
                         <!-- Modal item #2 (Product Info)-->
                         <div class="modal__item item-2">
-                            <div class="product modal-product">
+                            <!-- <div class="product modal-product">
                                 <div class="product__inner modal-inner">
+                                    <button class="item__remove" data-remove>
+                                        <h5>remove</h5>
+                                    </button>
                                     <img src="http://place-hold.it/250x100" alt="product-photo">
                                     <div class="product__right">
                                         <h5 class="product__name">Big Burgir</h5>
+                                        <h5 class="product__price">Cost: 100$</h5>
                                         <div class="product__counter modal-counter">
                                             <div class="product__control" data-action="minus">-</div>
                                             <div class="product__current" data-counter>1</div>
@@ -110,34 +118,9 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="product modal-product">
-                                <div class="product__inner modal-inner">
-                                    <img src="http://place-hold.it/250x100" alt="product-photo">
-                                    <div class="product__right">
-                                        <h5 class="product__name">Big Burgir</h5>
-                                        <div class="product__counter modal-counter">
-                                            <div class="product__control" data-action="minus">-</div>
-                                            <div class="product__current" data-counter>1</div>
-                                            <div class="product__control" data-action="plus">+</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
 
-                            <div class="product modal-product">
-                                <div class="product__inner modal-inner">
-                                    <img src="http://place-hold.it/250x100" alt="product-photo">
-                                    <div class="product__right">
-                                        <h5 class="product__name">Big Burgir</h5>
-                                        <div class="product__counter modal-counter">
-                                            <div class="product__control" data-action="minus">-</div>
-                                            <div class="product__current" data-counter>1</div>
-                                            <div class="product__control" data-action="plus">+</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                     <!-- Modal Footer -->

@@ -52,10 +52,11 @@ img {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0px 15px;
+  position: relative;
 }
 
 header {
-  padding-top: 30px;
+  margin: 30px 0;
 }
 
 .nav {
@@ -88,7 +89,7 @@ header {
 }
 
 main {
-  padding: 40px 0;
+  margin: 20px 0;
   position: relative;
 }
 
@@ -148,7 +149,7 @@ main {
 }
 
 .modal {
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
@@ -156,6 +157,21 @@ main {
   top: 0;
   left: 0;
   z-index: 10;
+}
+.modal.show {
+  display: flex;
+}
+
+.modal__close {
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  top: -26px;
+  right: -26px;
+}
+.modal__close > i {
+  width: 25px;
+  height: 25px;
 }
 
 .modal__cart {
@@ -229,6 +245,20 @@ main {
 .product__counter > .product__current {
   margin: 0 5px;
   cursor: pointer;
+}
+
+.item__remove {
+  border: red 1px dotted;
+  border-radius: 10px 0 0 10px;
+  background-color: #DB2B2B;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.item__remove > h5 {
+  color: #fff;
+  -ms-writing-mode: tb-lr;
+      writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 
 .modal__footer {

@@ -1,3 +1,4 @@
+const modalItem = document.querySelector(".modal__item.item-2")
 window.addEventListener('click', function (event) {
 
     if (event.target.hasAttribute('data-cart')) {
@@ -13,5 +14,25 @@ window.addEventListener('click', function (event) {
         };
         console.log(productInfo);
 
+        const cartItemHTML = `
+        <div class="product modal-product">
+        <div class="product__inner modal-inner">
+        <button class="item__remove" data-remove>
+            <h5>remove</h5>
+        </button>
+            <img src="${productInfo.imgSrc}" alt="product-photo">
+            <div class="product__right">
+                <h5 class="product__name">${productInfo.title}</h5>
+                <h5 class="product__price">${productInfo.price}</h5>
+                <div class="product__counter modal-counter">
+                    <div class="product__control" data-action="minus">-</div>
+                    <div class="product__current" data-counter>1</div>
+                    <div class="product__control" data-action="plus">+</div>
+                </div>
+            </div>
+        </div>
+    </div>`
+
+        modalItem.insertAdjacentHTML('beforeend', cartItemHTML)
     }
 })
