@@ -26,51 +26,132 @@
                 <div class="shops__inner">
                     <div class="shops__items">
                         <h5 class="title">Shops:</h5>
-                        <button class="btn__item">Mc Donny</button>
-                        <button class="btn__item">Burger Queen</button>
-                        <button class="btn__item">DummyNo</button>
+                        <button class="btn__item">All</button>
+                        <button class="btn__item" data-filter="mc-donny">Mc Donny</button>
+                        <button class="btn__item" data-filter="bur-queen">Burger Queen</button>
+                        <button class="btn__item" data-filter="dummyNo">DummyNo</button>
                     </div>
                 </div>
 
                 <!-- Products -->
 
                 <div class="shop__content">
-                    <div class="product" data-id="01">
+                    <div class="product" data-id="01" data-cat="mc-donny">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
                                 <h5 class="product__name">Big Burgir</h5>
-                                <h5 class="product__price">Cost: 100$</h5>
+                                <h5 class="product__price">100$</h5>
                             </div>
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="02">
+                    <div class="product" data-id="02" data-cat="mc-donny">
                         <div class="product__inner">
-                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product mc-donny-photo">
                             <div class="product__main">
                                 <h5 class="product__name">Small Burgir</h5>
-                                <h5 class="product__price">Cost: 50$</h5>
+                                <h5 class="product__price">50$</h5>
                             </div>
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="03">
+                    <div class="product" data-id="03" data-cat="mc-donny">
                         <div class="product__inner">
-                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product mc-donny-photo">
                             <div class="product__main">
                                 <h5 class="product__name">Cheese Burgir</h5>
-                                <h5 class="product__price">Cost: 60$</h5>
+                                <h5 class="product__price">60$</h5>
                             </div>
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="04">
+                    <div class="product" data-id="04" data-cat="mc-donny">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
                                 <h5 class="product__name">Chicken Burgir</h5>
-                                <h5 class="product__price">Cost: 70$</h5>
+                                <h5 class="product__price">70$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="05" data-cat="bur-queen">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">King Burgir XL</h5>
+                                <h5 class="product__price">99$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="06" data-cat="bur-queen">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Queen Burgir XL</h5>
+                                <h5 class="product__price">100$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="07" data-cat="bur-queen">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Weird Salad</h5>
+                                <h5 class="product__price">10$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="08" data-cat="bur-queen">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Beef Taco</h5>
+                                <h5 class="product__price">40$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="09" data-cat="dummyNo">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">Pizza Astra</h5>
+                                <h5 class="product__price">50$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="10" data-cat="dummyNo">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">MarGariTa Pizza</h5>
+                                <h5 class="product__price">20$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="11" data-cat="dummyNo">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">1 Cheese Pizza</h5>
+                                <h5 class="product__price">60$</h5>
+                            </div>
+                            <button data-cart class="btn">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product" data-id="12" data-cat="dummyNo">
+                        <div class="product__inner">
+                            <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
+                            <div class="product__main">
+                                <h5 class="product__name">What a... Pizza</h5>
+                                <h5 class="product__price">80$</h5>
                             </div>
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
@@ -110,7 +191,7 @@
                                     <img src="http://place-hold.it/250x100" alt="product-photo">
                                     <div class="product__right">
                                         <h5 class="product__name">Big Burgir</h5>
-                                        <h5 class="product__price">Cost: 100$</h5>
+                                        <h5 class="product__price">100$</h5>
                                         <div class="product__counter modal-counter">
                                             <div class="product__control" data-action="minus">-</div>
                                             <div class="product__current" data-counter>1</div>
@@ -125,7 +206,11 @@
                     </div>
                     <!-- Modal Footer -->
                     <div class="modal__footer">
-                        <h6>Total Price: 000 </h6>
+                        <div class="total">
+                            <span>Total: </span>
+                            <span class="total__price">0</span>
+                            <span>$</span>
+                        </div>
                         <button class="submit-btn" type="submit"> Submit </button>
                     </div>
                 </div>
@@ -136,6 +221,8 @@
     <script src="/script/counter.js"></script>
     <script src="/script/cart.js"></script>
     <script src="/script/modal.js"></script>
+    <script src="/script/cartPrice.js"></script>
+    <script src="/script/filter.js"></script>
 </body>
 
 </html>

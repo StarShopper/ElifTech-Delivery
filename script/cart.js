@@ -12,12 +12,12 @@ window.addEventListener('click', function (event) {
             price: product.querySelector('.product__price').innerText,
             counter: product.querySelector('[data-counter]'),
         };
-        console.log(productInfo);
+
 
         const cartItemHTML = `
-        <div class="product modal-product">
+        <div class="product modal-product" data-id="${product.dataset.id}">
         <div class="product__inner modal-inner">
-        <button class="item__remove" data-remove>
+        <button class="item__remove" data-remove="remove"'>
             <h5>remove</h5>
         </button>
             <img src="${productInfo.imgSrc}" alt="product-photo">
@@ -33,6 +33,9 @@ window.addEventListener('click', function (event) {
         </div>
     </div>`
 
+
         modalItem.insertAdjacentHTML('beforeend', cartItemHTML)
+
+        calcCardPrice();
     }
 })

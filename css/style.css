@@ -130,8 +130,12 @@ main {
 }
 
 .product {
+  display: flex;
   margin: 20px 30px;
   border: 2px aqua solid;
+}
+.product.hide {
+  display: none;
 }
 
 .product__inner {
@@ -237,6 +241,8 @@ main {
 .product__counter {
   display: flex;
   margin: 5px;
+  border: 1px #DB2B2B solid;
+  border-radius: 10px;
 }
 .product__counter > .product__control {
   margin: 0 10px;
@@ -267,7 +273,7 @@ main {
   align-items: center;
   margin-top: 20px;
 }
-.modal__footer > h6 {
+.modal__footer > .total {
   margin-right: 50px;
   font-size: 18px;
 }

@@ -10,8 +10,6 @@
 
         modalId.classList.add('show')
 
-        console.log(modalId);
-
     })
 
     modalClose.addEventListener("click", function (event) {
@@ -20,9 +18,6 @@
         let modalId = document.getElementById('modal')
 
         modalId.classList.remove('show')
-
-        console.log(modalId);
-
     })
 
 

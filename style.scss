@@ -146,9 +146,17 @@ main {
 }
 
 .product {
+    display: flex;
     margin: 20px 30px;
     border: 2px aqua solid;
+
+    &.hide{
+        display: none;
+    }
 }
+
+
+
 
 .product__inner {
     padding: 10px;
@@ -270,6 +278,9 @@ main {
     display: flex;
     margin: 5px;
 
+    border: 1px #DB2B2B solid;
+    border-radius: 10px;
+
     &>.product__control {
         margin: 0 10px;
         cursor: pointer;
@@ -302,7 +313,7 @@ main {
 
     margin-top: 20px;
 
-    &>h6 {
+    &>.total {
         margin-right: 50px;
         font-size: 18px;
     }
