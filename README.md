@@ -7,8 +7,8 @@ https://starshopper.github.io/ElifTech-Delivery/
 ------------------------------------------------
 Поки не працює Лінк на GitHub Pages стан сторінки буду викладати тут --->
 
-![image](https://user-images.githubusercontent.com/70586268/178597445-8d11438c-3003-492c-95f2-b214a8ead9c9.png)
+![image](https://user-images.githubusercontent.com/70586268/180327999-4ec95c55-0d83-4549-832c-edb9f70b4027.png)
 
 Modal for Shopping Cart
 
-![image](https://user-images.githubusercontent.com/70586268/178597538-e445f6e4-0c90-43de-aaab-e08f784d5bae.png)
+![image](https://user-images.githubusercontent.com/70586268/180328129-5521874f-5d8e-45ea-8229-15a0ab7f906d.png)
