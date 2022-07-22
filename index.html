@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/c1400d0575.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
@@ -26,7 +26,7 @@
                 <div class="shops__inner">
                     <div class="shops__items">
                         <h5 class="title">Shops:</h5>
-                        <button class="btn__item">All</button>
+                        <button class="btn__item" data-filter="all">All</button>
                         <button class="btn__item" data-filter="mc-donny">Mc Donny</button>
                         <button class="btn__item" data-filter="bur-queen">Burger Queen</button>
                         <button class="btn__item" data-filter="dummyNo">DummyNo</button>
@@ -36,7 +36,7 @@
                 <!-- Products -->
 
                 <div class="shop__content">
-                    <div class="product" data-id="01" data-cat="mc-donny">
+                    <div class="product mc-donny" data-id="01">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -46,7 +46,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="02" data-cat="mc-donny">
+                    <div class="product mc-donny" data-id="02">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product mc-donny-photo">
                             <div class="product__main">
@@ -56,7 +56,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="03" data-cat="mc-donny">
+                    <div class="product mc-donny" data-id="03">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product mc-donny-photo">
                             <div class="product__main">
@@ -66,7 +66,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="04" data-cat="mc-donny">
+                    <div class="product mc-donny" data-id="04">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -76,7 +76,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="05" data-cat="bur-queen">
+                    <div class="product bur-queen" data-id="05">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -86,7 +86,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="06" data-cat="bur-queen">
+                    <div class="product bur-queen" data-id="06">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -96,7 +96,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="07" data-cat="bur-queen">
+                    <div class="product bur-queen" data-id="07">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -106,7 +106,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="08" data-cat="bur-queen">
+                    <div class="product bur-queen" data-id="08">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -116,7 +116,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="09" data-cat="dummyNo">
+                    <div class="product dummyNo" data-id="09">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -126,7 +126,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="10" data-cat="dummyNo">
+                    <div class="product dummyNo" data-id="10">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -136,7 +136,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="11" data-cat="dummyNo">
+                    <div class="product dummyNo" data-id="11">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -146,7 +146,7 @@
                             <button data-cart class="btn">Add to Cart</button>
                         </div>
                     </div>
-                    <div class="product" data-id="12" data-cat="dummyNo">
+                    <div class="product dummyNo" data-id="12">
                         <div class="product__inner">
                             <img class="product__image" src="http://place-hold.it/250x150" alt="product-photo">
                             <div class="product__main">
@@ -164,26 +164,26 @@
     <!-- Modal Window -->
 
     <div class="modal" id="modal">
-            <div class="modal__cart">
-                <div class="container">
-                    <button class="modal__close" data-close>
-                        <i class="fa-solid fa-circle-xmark" style="width: 20px; height: 20px;"></i>
-                    </button>
-                    <div class="modal__inner">
-                        <!-- Modal item #1 (User's info) -->
-                        <div class="modal__item item-1">
-                            <label for="name">Name:</label>
-                            <input type="text" name="name" placeholder="Enter Your Name">
-                            <label for="Email">Email:</label>
-                            <input type="email" name="Email" placeholder="Enter Your Email">
-                            <label for="Phone">Phone:</label>
-                            <input type="tel" name="Phone" placeholder="Enter Your Phone Num">
-                            <label for="Adress">Adress:</label>
-                            <input type="text" name="Adress" placeholder="Enter Your Adress">
-                        </div>
-                        <!-- Modal item #2 (Product Info)-->
-                        <div class="modal__item item-2">
-                            <!-- <div class="product modal-product">
+        <div class="modal__cart">
+            <div class="container">
+                <button class="modal__close" data-close>
+                    <i class="fa-solid fa-circle-xmark" style="width: 20px; height: 20px;"></i>
+                </button>
+                <div class="modal__inner">
+                    <!-- Modal item #1 (User's info) -->
+                    <div class="modal__item item-1">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" placeholder="Enter Your Name">
+                        <label for="Email">Email:</label>
+                        <input type="email" name="Email" placeholder="Enter Your Email">
+                        <label for="Phone">Phone:</label>
+                        <input type="tel" name="Phone" placeholder="Enter Your Phone Num">
+                        <label for="Adress">Adress:</label>
+                        <input type="text" name="Adress" placeholder="Enter Your Adress">
+                    </div>
+                    <!-- Modal item #2 (Product Info)-->
+                    <div class="modal__item item-2">
+                        <!-- <div class="product modal-product">
                                 <div class="product__inner modal-inner">
                                     <button class="item__remove" data-remove>
                                         <h5>remove</h5>
@@ -202,19 +202,19 @@
                             </div> -->
 
 
-                        </div>
-                    </div>
-                    <!-- Modal Footer -->
-                    <div class="modal__footer">
-                        <div class="total">
-                            <span>Total: </span>
-                            <span class="total__price">0</span>
-                            <span>$</span>
-                        </div>
-                        <button class="submit-btn" type="submit"> Submit </button>
                     </div>
                 </div>
+                <!-- Modal Footer -->
+                <div class="modal__footer">
+                    <div class="total">
+                        <span>Total: </span>
+                        <span class="total__price">0</span>
+                        <span>$</span>
+                    </div>
+                    <input class="submit" type="submit" value="Submit">
+                </div>
             </div>
+        </div>
 
     </div>
 

@@ -59,6 +59,10 @@ img {
     position: relative;
 }
 
+.hide{
+    display: none;
+}
+
 // Header
 header {
     margin: 30px 0;
@@ -107,11 +111,14 @@ main {
 
 .main__inner {
     display: flex;
-    border: 2px #000 solid
+    border: 2px #000 solid;
+
 }
 
 .shops__inner {
-    margin-right: 50px;
+    display: flex;
+    // margin-right: 50px;
+    justify-content: center;
 }
 
 .shops__items {
@@ -140,19 +147,17 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
     border: 2px #000 solid;
-    padding: 10px;
+    padding: 5px;
     margin: 0 auto;
     overflow: scroll;
 }
 
 .product {
-    display: flex;
+
     margin: 20px 30px;
     border: 2px aqua solid;
 
-    &.hide{
-        display: none;
-    }
+
 }
 
 
@@ -318,7 +323,7 @@ main {
         font-size: 18px;
     }
 
-    &>button {
+    &>input {
         width: 140px;
         height: 30px;
     }
